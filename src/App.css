@@ -1,0 +1,150 @@
+.app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 0.25rem;
+  background: linear-gradient(135deg, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.form {
+  background: #1a1a2e;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+  border: 1px solid #2a2a3e;
+}
+
+.input {
+  width: 100%;
+  min-height: 100px;
+  background: #16162a;
+  border: 1px solid #2a2a3e;
+  border-radius: 8px;
+  color: #e0e0e0;
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0.75rem;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #a78bfa;
+}
+
+.input::placeholder {
+  color: #555;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.char-count {
+  font-size: 0.8rem;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.char-count.warn {
+  color: #f59e0b;
+}
+
+.char-count.danger {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.btn {
+  background: linear-gradient(135deg, #a78bfa, #f472b6);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.entry {
+  background: #1a1a2e;
+  border: 1px solid #2a2a3e;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.entry-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+  margin: 0;
+  color: #e0e0e0;
+}
+
+.entry-time {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.empty {
+  text-align: center;
+  color: #555;
+  padding: 3rem 1rem;
+  font-style: italic;
+}
